@@ -94,7 +94,7 @@ class ProfileScreen extends StatelessWidget {
                       filled: true,
                       fillColor: UIColors.gray,
                       border: const OutlineInputBorder(),
-                      hintText: "نغيير كلمة المرور",
+                      hintText: "تغيير كلمة المرور",
                       hintStyle: UITextStyle.titleBold,
                       enabledBorder: OutlineInputBorder(
                         borderSide: const BorderSide(width: 2, color: UIColors.yellow),

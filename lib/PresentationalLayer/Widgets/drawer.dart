@@ -39,6 +39,20 @@ class AppDrawer extends StatelessWidget {
                 style:  UITextStyle.titleBold,
               ),
             ),
+            ListTile(
+              onTap: ()  {
+                Get.toNamed(AppRoutes.savedQues);
+              },
+              leading: const Icon(
+                Icons.save,
+                color: UIColors.lightBlack,
+                size: 30,
+              ),
+              title: const Text(
+                "الأسئلة المحفوظة",
+                style:  UITextStyle.titleBold,
+              ),
+            ),
               ListTile(
                 onTap: ()  {},
                 leading: const Icon(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:get/get.dart';
+import 'package:mr_thinker/Constants/routes.dart';
 import '../../Constants/colors.dart';
 import '../../Constants/text_styles.dart';
 import '../../Constants/ui_styles.dart';
@@ -36,7 +37,15 @@ class CustomDropDownFormField extends StatelessWidget {
             value: value,
             child: Align(
               alignment: Alignment.centerRight,
-              child: Text(value,style: UITextStyle.bodyNormal.copyWith(fontSize: 18,color: UIColors.black)),
+              child: InkWell(onTap: (){
+                if(value == 'فراغات'||value == 'أسئلة تقليدية' ) {
+                  Get.toNamed(AppRoutes.tradQues);
+                }
+                else {
+                  Get.toNamed(AppRoutes.choiceQues);
+                }
+              },
+                  child: Text(value,style: UITextStyle.bodyNormal.copyWith(fontSize: 18,color: UIColors.black))),
             ),
           );
         }).toList(),
